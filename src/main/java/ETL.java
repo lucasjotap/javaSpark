@@ -23,7 +23,7 @@ public class ETL {
                 //Create table.
                 String jdbcUrl = "jdbc:mysql://localhost:3306/etlJava";
                 String userName = "localhost";
-                String password = "sqlserver";
+                String password = "password";
                 TableCreator.createTable(jdbcUrl, userName, password);
                 //Data extraction.
                 Dataset<Row> extractedData = Extractor.extractData(csvFilePath);
